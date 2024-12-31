@@ -1,0 +1,26 @@
+body {
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+}
+
+.shows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    width: 250px; 
+    padding: 5px;
+    text-align: center;
+}
