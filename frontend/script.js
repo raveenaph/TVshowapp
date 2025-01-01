@@ -9,6 +9,10 @@ const searchbutton = document.getElementById("search-button");
 
 displayShows(APILINK);
 
+function addShowToLibrary(showId, title, imageURL) {
+    
+}
+
 function displayOneShow(show) {
     showsList.innerHTML += `
         <div class="show">
@@ -16,6 +20,7 @@ function displayOneShow(show) {
                 <img src="${IMG_PATH}${show.poster_path}" class="thumbnail">
             </div>
             <h3 class="show-title">${show.name}</h3>
+            <a href="#" onclick="addShowToLibrary('${show.id}', '${show.name}', '${IMG_PATH}${show.poster_path}')">Save to library</a>
         </div>`;
 }
 
